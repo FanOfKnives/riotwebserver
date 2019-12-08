@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="\Images\Logo.png"/>
+<title>Riot Games | Contact Us </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link href='css/support.css' rel='stylesheet' type='text/css'>
+<style>
+
+.img-responsive {
+
+width: 100%;
+height: 100%;
+
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+</style>
+</head>
+<body style="padding-top: 50px; height:1500px; background-color: white;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        
+
+        <ul class="navbar-nav mx-auto align-top">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Our Games</a>
+            </li>
+            <a class="navbar-brand ml-3" href="meettheteam.html">
+                <img src="\Images\Logo2.png" width="100" height="30"  alt="">
+                    
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="meettheteam.html">Meet the Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container mt-5">
+            <form id="contact-form" name="contact" method="post" onsubmit="submitForm()" role="form">
+        
+                            <div class="messages"></div>
+                            
+                                <div class="controls">
+                            
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_need">Please specify your need *</label>
+                                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                    <option value=""></option>
+                                                    <option value="Request quotation">Tecnical issue with one of our games</option>
+                                                    <option value="Request order status">Billing/RP Issues</option>
+                                                    <option value="Request copy of an invoice">Account Recovery</option>
+                                                    <option value="Other">Other(Please Specify in</option>
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                            <h5 style="color:green" class="hidden" id="success">Your message has been recieved, we will reply as soon as possible</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="text-muted">
+                                                <strong>*</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </form>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+                <script src="js/contact.js"></script>
+          </div>
+<div class="footer">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+                        
+            
+                    <ul class="navbar-nav mx-auto align-top" style="height: 50px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Our Games</a>
+                        </li>
+                        <a class="navbar-brand ml-3" href="home.html">
+                            <img src="\Images\Logo.png" height= "30" width= "30" alt="">
+                                    
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+                    <ul class="navbar-nav mx-auto align-top">
+                        <li class="nav-item">
+                            <a class="nav-link mx-auto" href="#">^ To The Surface ^</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-auto" >© 2017 Riot Games. All Rights Reserved.</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+                    <ul class="navbar-nav mx-auto align-top">
+                        <a class="navbar-brand ml-3" href="https://twitter.com/riotgames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <img src="\Images\icon1.png" height= "30" width= "30" alt="">
+                        </a>
+                        <a class="navbar-brand ml-3" href="https://www.instagram.com/riotgames/?hl=en">
+                            <img src="\Images\icon2.png" height= "30" width= "30" alt="">
+                        </a>
+                        <a class="navbar-brand ml-3" href="https://www.facebook.com/RiotGames/">
+                            <img src="\Images\icon3.png" height= "30" width= "30" alt="">
+                        </a>
+                        <a class="navbar-brand ml-3" href="https://www.youtube.com/channel/UCJEGvSZnQ1pkVfHO8s5G8hA">
+                            <img src="\Images\icon4.png" height= "30" width= "30" alt="">
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+</body>
+</html>

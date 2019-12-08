@@ -1,0 +1,20 @@
+{
+  "name": "5007cw",
+  "version": "1.0.0",
+  "description": "Coursework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.coventry.ac.uk/ander163/5007CW.git"
+  },
+  "author": "Taine Anderson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "koa": "^2.11.0"
+  }
+}

@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="\Images\Logo.png"/>
+<title>Riot Games | Home </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.img-responsive {
+
+width: 100%;
+height: 100%;
+
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
+</style>
+</head>
+<body style="padding-top: 50px; height:1500px; background-color: white;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        
+
+        <ul class="navbar-nav mx-auto align-top">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Our Games</a>
+            </li>
+            <a class="navbar-brand ml-3" href="#">
+                <img src="\Images\Logo2.png" width="100" height="30"  alt="">
+                    
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="meettheteam.html">Meet the Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+<div id="homeCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homeCarousel" data-slide-to="1"></li>
+        <li data-target="#homeCarousel" data-slide-to="2"></li>
+        <li data-target="#homeCarousel" data-slide-to="3"></li>
+        <li data-target="#homeCarousel" data-slide-to="4"></li>
+        <li data-target="#homeCarousel" data-slide-to="5"></li>
+    </ol>
+          
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="\Images\slide1.jpg" alt="Celebrating 10 Years of Leauge of Legends">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">10 years of League</button>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="\Images\slide 7.jpg" alt="Teamfight Tactics, New Update!">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" href="products.html" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">New Teamfight Tactics Update</button>
+            </div>
+        </div>
+              
+        <div class="carousel-item">
+            <img src="\Images\slide4.jpg" alt="Teamfight Tactics coming to mobile!">
+            <div class="carousel-caption d-none d-md-block">
+                    <button type="button" href="products.html" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">Teamfight Tactics Coming To Moblie</button>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="\Images\slide8.jpg" alt="Aphelios, New Champion Reveal">
+            <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">Aphelios Champion Spotlight</button>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="\Images\slide5.jpg" alt="Legends of Runeterra">
+            <div class="carousel-caption d-none d-md-block">
+                    <button type="button" href="products.html" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">More Info on Legends of Runeterra</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="\Images\slide2.jpg" alt="League of Legends Wild Rift">
+            <div class="carousel-caption d-none d-md-block">
+                    <button type="button" href="products.html" class="btn btn-lg-outline-dark" style="color: white; background-color: red; font-family: fantasy;">More Info on LoL: Wild Rift</button>
+            </div>
+        </div>
+    </div>
+          
+    <a class="carousel-control-prev" href="#homeCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#homeCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+<div class="container-fluid bg-dark">
+    <h2 style="color: white; text-align: center; font-family: fantasy">Latest News</h2>
+    
+
+    <ul class="nav nav-pills nav-justified center-pills">
+        <li class="active"><a style="color: white; font-family: fantasy;" data-toggle="tab" href="#news1" class="nav-item nav-link active">Celebrating 10 Years Of League</a></li>
+        <li><a href="#news2" style="color: white; font-family: fantasy;" data-toggle="tab" class="nav-item nav-link">TFT Update</a></li>
+        <li><a href="#news3" style="color: white; font-family: fantasy; " data-toggle="tab" class="nav-item nav-link">TFT Coming To Mobile</a></li>
+        <li><a href="#news4" style="color: white; font-family: fantasy; " data-toggle="tab" class="nav-item nav-link">Aphelios Champion Spotlight</a></li>
+    </ul> 
+    
+</div>
+
+
+<div class="container">
+    <div class="tab-content">
+    <div id="news1" class="tab-pane active" role="tabpanel">
+        <div class="contrainer-fluid bg-dark">
+            <h3 style=" font-family: fantasy; text-align: center; color: gold;">League of Legends 10th Anniversary</h3>
+        </div>
+
+        <img class="img-responsive" src="\Images\news1.jpg" alt="10 Year">
+        <p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">League of Legends is 10 years old! Instead of League getting gifts for its birthday, we wanted to give back to the players who made all of this a reality. During 10 Days of Gifting (from 10/17–10/27) you can play a game to receive a daily gift, culminating in a very special surprise on League’s birthday. Don't worry if you miss a day, they'll last for a little while. See the gifts below:</p>
+
+
+
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 1: Anniversary Icon, Emote, and Ward Skin</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 2: 6300 Blue Essence</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 3: Masterwork Chest + Hextech Key</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 4: Little Legends Rare Egg</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 5: 3000 Orange Essence</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 6: 4 Skin Shards</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;"> Day 7: 25 Prestige Points</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 8: 200 Worlds 2019 Tokens</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 9: 2 Gemstones</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 10: Legendary Skin</p>
+        <p style="font-size: 28px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">Day 11: Annie-versary + Birthday Border + Icon</p>
+                    
+        <br><p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;" >Preseason 2020 is around the corner! We're introducing more means of mastery and variety in every game on Summoner's Rift. We also teased our 147th champion, Aphelios. He’ll be coming to the Rift next month. And finally, you’ve asked for it... non-stop. URF is returning to League!</br>
+
+        <img class="img-responsive" src="\Images\slide3.png" alt="Annieversary">
+
+            
+    </div>
+        
+        
+    <div id="news2" class="tab-pane fade">
+        <div class="contrainer-fluid bg-dark">
+            <h3 style=" font-family: fantasy; text-align: center; color: gold;">TFT: Rise of the Elements</h3>
+        </div>
+        <img class="img-responsive" src="\Images\news2.jpg" alt="tft">
+        <p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;"></p>Teamfight Tactics’ beta is over and the elements are rising in season two. As our first new set, Rise of the Elements fully replaces the champions, origins, and classes you played with during beta.
+
+        Here you will find all the information you need to hop into the Convergence and start exploring the new set. TFT has evolved, but your goal’s the same—can you adapt to new strategies, abilities, effects, and interactions to build a team and defeat your opponents?</p>
+        <br><p style="font-size: 14px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">The Rise of the Elements pass is more heavily focused on the most exciting stuff. You’ll be able to earn four map chromas, based off the four core elements of the set: Inferno, Mountain, Ocean, and Cloud.
+
+        This pass doesn’t have any summoner icons—we’ve seen the memes and know you have plenty of them. We’ve upgraded all of the smaller rewards to emotes.
+                    
+        At the end of the pass are two little legends eggs, a Set 1 Egg and a Set 1-3 Rare Egg.</p></br>
+        <p style="font-size: 14px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">So far, our passes have been pretty strict on time limitations, which means you haven’t had very long to get to the most exciting rewards at the end of ’em. This one will stay up for the entire length of the Rise of the Elements set. We hope this gives you more time to earn the things you’re excited about. In addition to the extra time, this pass is also more flexible in two specific ways:
+
+        Orb of Enlightenment: We wanted to make it easier for players who don’t play TFT every day but still play a lot of it to get a good amount of XP from the Orb. The Orb will now recharge every three days instead of every day, so if you only play certain nights or only on weekends, you’ll have a much easier time earning XP in this pass.
+        Larger Missions: Some weeks will have larger missions, but fewer of them. These missions could take a couple of days to finish, but you’ll have access to them for the entire week. We’re excited to hear what you think about doing more small tasks vs working towards a bigger goal over multiple days.
+        This pass will be active from the first day of Rise of the Elements until the launch of the next set.
+                    
+        Best of luck in the Convergence!</p>
+        <img class="img-responsive" src="\Images\news3.jpg" alt="tft">
+    </div>
+    <div id="news3" class="tab-pane fade">
+        <div class="contrainer-fluid bg-dark">
+            <h3 style=" font-family: fantasy; text-align: center; color: gold;">TFT: Coming to Mobile Devices</h3>
+        </div>
+            <img class="img-responsive" src="\Images\news4.jpg" alt="tft">
+            <p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">Teamfight Tactics is going mobile! The standalone app will feature cross-platform play, so you can battle for the Convergence against your friends on PC from the palm of your hand.</p>
+    </div>
+    <div id="news4" class="tab-pane fade">
+        <div class="contrainer-fluid bg-dark">
+            <h3 style=" font-family: fantasy; text-align: center; color: gold;">Aphelios, New Champion Reveal</h3>
+        </div>
+        <video controls>
+            <source src="\Images\Aphelios The Weapon of the Faithful  Champion Trailer - League of Legends.ogv" type="video/mp4">
+              Your browser does not support the video tag.
+        </video>
+        <p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">Most champions can be summarized relatively quickly, but Aphelios isn't most champions. Learning to wield the Weapon of the Faithful demands discipline, focus, and mental acuity, so consider this primer your first test of faith along the path to mastering a champion with one of the highest skill ceilings in the game</p>
+        <p style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;">INNATE: Aphelios has access to an arsenal of 5 Moonstone Weapons, created by his sister Alune. He equips two weapons at any one time, one as his main weapon and one as his off-hand. Each weapon has a unique basic attack and passive effect.</p>
+    </div>
+
+</div>
+</div>
+<div class="footer">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+                
+    
+            <ul class="navbar-nav mx-auto align-top" style="height: 50px">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Our Games</a>
+                </li>
+                <a class="navbar-brand ml-3" href="home.html">
+                    <img src="\Images\Logo.png" height= "30" width= "30" alt="">
+                            
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="meettheteam.hl">Meet the Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+            <ul class="navbar-nav mx-auto align-top">
+                <li class="nav-item">
+                    <a class="nav-link mx-auto" href="#">^ To The Surface ^</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-auto" >© 2017 Riot Games. All Rights Reserved.</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-bottom">
+            <ul class="navbar-nav mx-auto align-top">
+                <a class="navbar-brand ml-3" href="https://twitter.com/riotgames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <img src="\Images\icon1.png" height= "30" width= "30" alt="">
+                </a>
+                <a class="navbar-brand ml-3" href="https://www.instagram.com/riotgames/?hl=en">
+                    <img src="\Images\icon2.png" height= "30" width= "30" alt="">
+                </a>
+                <a class="navbar-brand ml-3" href="https://www.facebook.com/RiotGames/">
+                    <img src="\Images\icon3.png" height= "30" width= "30" alt="">
+                </a>
+                <a class="navbar-brand ml-3" href="https://www.youtube.com/channel/UCJEGvSZnQ1pkVfHO8s5G8hA">
+                    <img src="\Images\icon4.png" height= "30" width= "30" alt="">
+                </a>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
