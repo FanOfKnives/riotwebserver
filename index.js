@@ -29,9 +29,10 @@ app.get('/', function(req, res) {
 app.post('/handlecontact', function(req, res){
     res.status = 201;
     res.send({message: "Riot Has Recieved Your Ticket"});
-})
+});
 
-app.listen(3000, function(){
+var port = process.env.PORT || 3000:
+app.listen(port, function(){
     console.log('Server running on http://localhost:3000')
 });
 
