@@ -37,6 +37,33 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/HTML/products.html'));
 });
 
+app.get('/contact', function(req, res) { 
+    let data = {
+        title: "Contact Riot Games"
+    } 
+    ejs.renderFile('./html/contact.ejs', data, null, function(err, str){
+        // str => Rendered HTML string
+        res.send(str);
+    });});
+
+//this to create the tables insiode our db
+//remeber this should be password protected
+app.get('/createDB', function(req, res) {  
+    //run the create table function
+    db.createTables(databaseData, function(err, result){
+        //if amy error happend send an error response
+        if(err) {
+            res.status(400);
+            res.end("an error has occured:" + err);
+            return;
+        }
+        //otherwise we created tables successfully
+        res.status(200);
+        res.end("tables were created successfully");
+    });
+});
+
+
 app.post('/handlecontact', function(req, res){
     
     console.log(req.body);
