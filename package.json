@@ -4,7 +4,7 @@
   "description": "Coursework",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js", 
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +16,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "koa": "^2.11.0"
+    "koa": "^2.11.0",
+    "mysql": "^2.17.1"
   }
 }
