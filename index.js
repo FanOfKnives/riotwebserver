@@ -1,18 +1,26 @@
 var koa = require('koa');
+var db = require('./database');
 var app = new koa();
 
 var express = require('express');
 var parser = require('body-parser');
 
+
 var app = express();
-
-
 
 const path = require('path');
 app.use(parser.json());
 app.use(express.static('HTML'));
 
 
+//prepare our database connection parameters
+const databaseData = { 
+    host:"localhost",
+    user:"root",
+    password: "",
+    database: "riotgames",
+    port: 3306
+};
 
 
 app.get('/', function(req, res) {
@@ -29,6 +37,21 @@ app.get('/', function(req, res) {
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/HTML/products.html'));
+});
+
+app.get('/createDB', function(req, res) {  
+    //run the create table function
+    db.createTables(databaseData, function(err, result){
+        //if amy error happend send an error response
+        if(err) {
+            res.status(400);
+            res.end("an error has occured:" + err);
+            return;
+        }
+        //otherwise we created tables successfully
+        res.status(200);
+        res.end("tables were created successfully");
+    });
 });
 
 app.post('/handlecontact', function(req, res){
