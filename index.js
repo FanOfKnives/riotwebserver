@@ -6,8 +6,8 @@ var parser = require('body-parser');
 
 
 var app = express();
-
-const path = require('path');
+var db = require('./database');
+var path = require('path');
 app.use(parser.json());
 app.use(express.static('HTML'));
 
