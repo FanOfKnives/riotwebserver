@@ -21,7 +21,7 @@ function submitForm() {
         console.log(this.status);
         if (this.readyState == 4 && this.status == 200) {
           var data = JSON.parse(this.responseText);
-          console.log("success2");
+          console.log("success");
           //reset form
 
           //display a sucess message in green
