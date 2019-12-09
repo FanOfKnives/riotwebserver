@@ -2,11 +2,23 @@ var koa = require('koa');
 var app = new koa();
 
 var express = require('express');
+var parser = require('body-parser');
+
+const db=require('./database')
+
 var app = express();
-var parser = require('body-parser')
+
 const path = require('path');
 app.use(parser.json());
 app.use(express.static('HTML'));
+
+const databaseData = { 
+    host:"localhost",
+    user:"root",
+    password: "",
+    database: "riotgames",
+    port: 3306
+};
 
 
 app.get('/', function(req, res) {
