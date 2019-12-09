@@ -7,8 +7,8 @@ var parser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var app = express();
-const db = require('./database');
-const path = require('path');
+var db = require('./database');
+var path = require('path');
 app.use(parser.json());
 app.use(express.static('HTML'));
 
