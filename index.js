@@ -1,5 +1,4 @@
 var koa = require('koa');
-var db = require('./database');
 var app = new koa();
 
 var express = require('express');
