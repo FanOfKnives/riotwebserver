@@ -13,6 +13,14 @@ app.use(parser.json());
 app.use(express.static('HTML'));
 
 
+app.use(cookieParser());
+app.use(session({secret: "secretkey"}));
+
+app.use(parser.json());
+app.use(parser.urlencoded());
+
+app.use(express.static('public'));
+
 //prepare our database connection parameters
 const databaseData = { 
     host:"localhost",
@@ -38,6 +46,58 @@ app.get('/', function(req, res) {
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/HTML/products.html'));
 });
+
+app.get('/dashboard', function (req, res){
+
+    if(req.session.user){
+        res.sendFile(path.join(__dirname+'/html/protected.html'))
+    }
+    else{
+        res.redirect('/login')
+    }
+
+});
+app.get('/login', function (req,res){
+
+    res.sendFile(path.join(__dirname+'/html/login.html'))
+});
+
+app.post('/authenticate', function(req, res){
+
+    console.log(req.body)
+    let loginData = {
+        username : req.body.username,
+        password : req.body.password
+    }
+
+    db.login(databaseData, loginData, function(err, data){
+
+        if(err){
+
+        }
+        else{
+            if(data && data.length > 0){
+
+                req.session.user = data[0];
+                //you logged in 
+                //you can go to home page
+                res.redirect('/protected');
+            }
+            else
+            {
+                res.redirect('/login')
+            }
+        }
+    })
+
+});
+
+app.get('/logout', function (req,res){
+
+    req.session.user = undefined;
+
+    res.send("you logged out successfully");
+})
 
 app.get('/createDB', function(req, res) {  
     //run the create table function
